@@ -30,5 +30,5 @@ void drawPiece(short x, short y, short color) {
 void drawTable(short x, short y, short color) {
     for (int i = 0; i < table.R; i++)
         for (int j = 0; j < table.C; i++)
-            drawPiece(x, y, color);
+            drawPiece(i, j, 1);
 }
