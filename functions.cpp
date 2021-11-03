@@ -60,7 +60,7 @@ void drawPiece(short x, short y, short color) {
         setColorBGTextXY(toaDoX(x), toaDoY(y), 13, 15, const_cast<char*>("8 "));
         break;
     case 9: // bom
-        setColorBGTextXY(toaDoX(x), toaDoY(y), 12, 14, const_cast<char*>("B "));
+        setColorBGTextXY(toaDoX(x), toaDoY(y), 0, 12, const_cast<char*>("B "));
         break;
     case 10: // ô chẵn
         setColorBGTextXY(toaDoX(x), toaDoY(y), 0, 8, const_cast<char*>("  "));
