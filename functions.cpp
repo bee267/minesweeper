@@ -21,6 +21,7 @@ void constructor(short R, short C, short B) {
     table.O = 0;
     table.F = 0;
     createArray();
+    drawTable();
     deleteArray();
 }
 short toaDoX(short x) { // toạ độ x vẽ bảng
@@ -83,6 +84,12 @@ void drawPiece(short x, short y, short color) {
 }
 void drawTable(short x, short y, short color) {
     for (int i = 0; i < table.R; i++)
-        for (int j = 0; j < table.C; i++)
-            drawPiece(j, i, 1);
+        for (int j = 0; j < table.C; j++){
+            if (((i % 2) && (j % 2)) || !((i % 2) || (j % 2))) {
+                drawPiece(j, i, 10); // vẽ ô chẵn
+            }
+            else {
+                drawPiece(j, i, 11); // vẽ ô lẻ
+            }
+        }
 }
