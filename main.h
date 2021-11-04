@@ -1,5 +1,9 @@
 #pragma once
 #include<iostream>
+#include<ctime>
+
+#define ClickTrai 0x5A
+#define ClickPhai 0x58
 
 struct stable
 {
