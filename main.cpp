@@ -2,8 +2,9 @@
 #include "main.h"
 
 int main() {
-
-    setColorBGTextXY(1, 1, 0, 8, const_cast<char*>("B"));
+    constructor(9, 9, 10);
+    Cursor(false); // ẩn con trỏ
+    xuLySuKien();
     std::cout << std::endl;
     system("pause");
     return 0;
